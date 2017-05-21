@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  post "tweets" => "tweets#create"
+
+  get 'tweets/index'
+
+  get 'tweets/show'
+
+  get 'tweets/new'
+
   get 'users/index'
 
   get 'users/show'
